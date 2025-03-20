@@ -1,1 +1,1 @@
-export { default } from "./AuthPortal";
+export { default } from './AuthPortal';

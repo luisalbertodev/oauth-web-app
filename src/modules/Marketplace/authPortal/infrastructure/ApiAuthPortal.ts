@@ -1,5 +1,7 @@
-import { AuthPortalRepository } from "../domain/AuthPortalRepository";
+import { AuthPortalRepository } from '../domain/AuthPortalRepository';
 
 export function ApiAuthPortal(): AuthPortalRepository {
-  return {};
+    return {
+        run() {},
+    };
 }

@@ -1,1 +1,3 @@
-export interface AuthPortal {}
+export interface AuthPortal {
+    email: string;
+}

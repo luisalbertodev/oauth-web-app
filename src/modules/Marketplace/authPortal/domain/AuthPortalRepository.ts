@@ -1,1 +1,3 @@
-export interface AuthPortalRepository {}
+export interface AuthPortalRepository {
+    run(): void;
+}

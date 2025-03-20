@@ -1,0 +1,11 @@
+node_modules
+.next/
+.turbo/
+__tmp__/
+dist/
+
+test-results/
+coverage/
+public/
+
+.husky/
