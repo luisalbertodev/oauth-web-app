@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# OAuth Web App
 
-## Getting Started
+This is a **Next.js 15 + React 19** project designed to handle authentication using OAuth.
+It is built with **TypeScript, Tailwind CSS v4, Jest, Playwright**, and follows modern best practices.
 
-First, run the development server:
+## 🚀 Getting Started
+
+To run the development server locally, use:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install  # Install dependencies
+npm run dev  # Start the development server
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then, open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🏗️ Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+/src
+  /app           # Next.js app directory (Routing & Server Components)
+  /components    # Reusable UI components
+  /sections      # Larger UI sections
+  /services      # API and external service handlers
+  /hooks         # Custom React hooks (if applicable)
+  /utils         # Utility functions
+  /config        # Global configurations (if applicable)
+/tests
+  /unit          # Unit tests (Jest)
+  /integration   # Integration tests (Jest)
+  /e2e           # End-to-End tests (Playwright)
+```
 
-## Learn More
+## 🧪 Testing
 
-To learn more about Next.js, take a look at the following resources:
+### **Run all tests**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run test
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### **Run unit tests (Jest)**
 
-## Deploy on Vercel
+```bash
+npm run test:unit
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### **Run integration tests**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run test:integration
+```
+
+### **Run E2E tests (Playwright)**
+
+```bash
+npm run test:e2e
+```
+
+## 🤝 Contributing
+
+We welcome contributions! To contribute:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-name`).
+3. Make your changes and add tests if needed.
+4. Open a pull request.
+
+## 📜 License
+
+This project is open-source and available under the **MIT License**.
